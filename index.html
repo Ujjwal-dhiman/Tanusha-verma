@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanusha Verma</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #fbc2eb 0%, #a6c0fe 100%);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 2.5em;
+            font-family: 'Dancing Script', cursive;
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease, transform 0.3s ease;
+            position: relative;
+        }
+        nav a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background: #d9534f;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+        nav a:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        nav a:hover {
+            color: #d9534f;
+            transform: translateY(-3px);
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            background: #fff;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .section:nth-of-type(odd) {
+            background: #f9f9f9;
+        }
+        .section img {
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 100%;
+            height: auto;
+        }
+        .section img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .section h2 {
+            color: #d9534f;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+        }
+        .poem {
+            font-style: italic;
+            color: #666;
+            line-height: 1.6;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 1em;
+            }
+            .section {
+                padding: 30px 10px;
+            }
+            .section h2 {
+                font-size: 1.8em;
+            }
+        }
+        @media (max-width: 480px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .section {
+                padding: 20px 10px;
+            }
+            .section h2 {
+                font-size: 1.6em;
+            }
+            .section img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>For You, Tansuha </h1>
+        <nav>
+            <a href="#how-i-love-her">How I Love You</a>
+            <a href="#how-beautiful-she-is">How Beautiful you are</a>
+            <a href="#poem">A Poem for you</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#love-note">Love Note</a>
+        </nav>
+    </header>
+    
+    <div class="section" id="how-i-love-her">
+        <h2>How I Love Her</h2>
+        <p>From the moment we met, my life has been filled with joy and love. Every day with you is a new adventure, and I cherish each moment we share. Your kindness, your laughter, and your unwavering support mean the world to me. I love you more than words can express.</p>
+    </div>
+    
+    <div class="section" id="how-beautiful-she-is">
+        <h2>How Beautiful She Is</h2>
+        <p>You light up every room you enter with your grace and beauty. Your smile, your eyes, and your heart radiate warmth and charm. I am constantly amazed by how stunning you are, inside and out. You are the most beautiful person I know, and I am so grateful to have you in my life.</p>
+    </div>
+    
+    <div class="section" id="poem">
+        <h2>A Poem for Her</h2>
+        <p class="poem">In the quiet of the evening, under the starry sky,<br>
+        I find my heart speaks softly, and here’s the reason why:<br>
+        You are my dawn and my dusk, my sun and my moon,<br>
+        With every beat of my heart, I fall deeper too soon.<br>
+        Your love is a melody that dances through my soul,<br>
+        With you by my side, I am forever whole.</p>
+    </div>
+    
+    <div class="section" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="image-1.jpg" alt="Picture 1">
+            <img src="image-2.jpg" alt="Picture 2">
+            <img src="image-3.jpg" alt="Picture 3">
+        </div>
+    </div>
+    
+    <div class="section" id="love-note">
+        <h2>Love Note</h2>
+        <p class="love-note">Every moment with you is a treasure. I love you more than words can say. Thank you for being you!</p>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ just for you</p>
+    </footer>
+</body>
+</html>
+
